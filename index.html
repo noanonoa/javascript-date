@@ -12,13 +12,33 @@
   <article class="javascript-date">
     <h1>JavaScript <span class="code">Date</span> Object</h1>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, doloremque.
+      In JavaScript, there is a built-in object called <span class="code">Date</span>.  It stores the date, time, and methods for date/time management.
+      For example, <span class="code">Date</span> can be used to create or modify time, to measure time, or to just simply print out the current date.
     </p>
     <section class="container">
-      <h2 class="header">Date</h2>
+      <h2 class="header">Creation</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident assumenda doloremque dolores voluptatem harum neque cumque perspiciatis explicabo unde?
+        To create a new <span class="code">Date</span> object, call <span class="code">new Date()</span> with one of the following arguments:
       </p>
+      <p class="code-block">
+        <span class="comment">// Without arguments - Creates a Date object for the current date and time:</span>
+        <br>
+        let now = new Date()
+        <br>
+        console.log(now) <span class="comment">// shows current date/time</span>
+        <br><br><br>
+        <span class="comment">// Milliseconds - Creates a Date object with the time equal to number of milliseconds passed after Jan. 1st, 1970 UTC+0</span>
+        <br>
+        let Jan01_1970 = new Date(0) <span class="comment">// Jan. 1, 1970 UTC+0</span>
+        <br>
+        let Jan02_1970 = new Date(24 * 60 * 60 * 1000) <span class="comment">// add 24 hours and get Jan. 2, 1970</span>
+        <br>
+        let Dec31_1969 = new Date(-24 * 60 * 60 * 1000) <span class="comment">// dates before Jan. 1, 1970 have negative timestamps</span>
+        <br><br><br>
+      </p>
+    </section>
+    <section id="date-section" class="container">
+      <h2 class="header">Date</h2>
     </section>
     <section class="container">
       <h2 class="header">Time</h2>
