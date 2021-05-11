@@ -53,3 +53,7 @@ body {
 .comment {
   color: #afafaf;
 }
+
+.today {
+  font-size: 3em;
+}
